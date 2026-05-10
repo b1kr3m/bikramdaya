@@ -1,0 +1,91 @@
+.section {
+  min-height: 100vh;
+}
+
+.photo {
+  object-fit: cover;
+  transform: scale(1.04);
+  object-position: center 54%;
+}
+
+.edgeTop {
+  pointer-events: none;
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  z-index: 1;
+  height: 9rem;
+  backdrop-filter: blur(12px);
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+.edgeBottom {
+  pointer-events: none;
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 11rem;
+  backdrop-filter: blur(12px);
+  -webkit-mask-image: linear-gradient(to top, black, transparent);
+  mask-image: linear-gradient(to top, black, transparent);
+}
+
+.edgeLeft {
+  pointer-events: none;
+  position: absolute;
+  inset-block: 0;
+  left: 0;
+  z-index: 1;
+  width: 6rem;
+  backdrop-filter: blur(12px);
+  -webkit-mask-image: linear-gradient(to right, black, transparent);
+  mask-image: linear-gradient(to right, black, transparent);
+}
+
+.edgeRight {
+  pointer-events: none;
+  position: absolute;
+  inset-block: 0;
+  right: 0;
+  z-index: 1;
+  width: 6rem;
+  backdrop-filter: blur(12px);
+  -webkit-mask-image: linear-gradient(to left, black, transparent);
+  mask-image: linear-gradient(to left, black, transparent);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 14, 14, 0.58) 0%,
+    rgba(12, 12, 12, 0.38) 35%,
+    rgba(10, 10, 10, 0.44) 65%,
+    rgba(8, 8, 8, 0.62) 100%
+  );
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.04) 35%,
+    rgba(0, 0, 0, 0.62) 100%
+  );
+}
+
+.titleWrap {
+  margin-top: -5rem;
+}
+
+.title {
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  text-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+  animation: fadeUp 1s ease both;
+}

@@ -1,0 +1,33 @@
+.heading {
+  font-size: clamp(2.1rem, 4.2vw, 3.55rem);
+}
+
+.para {
+  color: #2e2e2e;
+  font-size: 1.01rem;
+  line-height: 1.72;
+}
+
+.imageMask {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 89%);
+  mask-image: radial-gradient(ellipse at center, black 60%, transparent 89%);
+}
+
+.photo {
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.quoteBox {
+  background: linear-gradient(180deg, #e7ece4 0%, #e3e9e1 100%);
+  border-radius: 0.75rem;
+}
+
+.quoteText {
+  color: #1f1f1f;
+  font-size: clamp(1.25rem, 2.1vw, 2rem);
+  line-height: 1.45;
+}
