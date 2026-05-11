@@ -14,18 +14,15 @@ export const heroMedia = {
 
 export const aboutMedia = {
   feature: {
-    // Replace this with your final image later (same folder: public/images)
-    src: "/images/second_page.png",
+    src: "/images/about_me.png",
     alt: "Bikram Daya portrait",
   },
 } as const;
 
 export const goalMedia = {
   feature: {
-    // Replace this with your final image later (same folder: public/images).
-    // Safe fallback avoids broken-image UI until a dedicated goal image is added.
-    src: "/images/second_page.png",
-    alt: "Bikram Daya with children",
+    src: "/images/about_me.png",
+    alt: "Bikram Daya in a wheat field",
   },
 } as const;
 

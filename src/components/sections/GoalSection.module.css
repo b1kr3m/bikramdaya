@@ -11,14 +11,12 @@
 .imageMask {
   position: absolute;
   inset: 0;
-  overflow: hidden;
-  -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 89%);
-  mask-image: radial-gradient(ellipse at center, black 60%, transparent 89%);
+  overflow: visible;
 }
 
 .photo {
-  object-fit: cover;
-  object-position: center 28%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .quoteBox {

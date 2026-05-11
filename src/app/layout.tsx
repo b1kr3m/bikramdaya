@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { siteConfig } from "@/lib/utils";
-import { CursorFx } from "@/components/ui/CursorFx";
 
 /* ── Site Metadata ── */
 export const metadata: Metadata = {
@@ -82,7 +81,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
-        <CursorFx />
         <Navbar />
         <main className="page-shell">{children}</main>
       </body>

@@ -227,7 +227,7 @@ SEO is handled through:
 ## 6) Known Gaps / Technical Debt
 
 1. Goal image still uses fallback media.
-- `goalMedia.feature.src` currently points to `/images/second_page.png`.
+- `goalMedia.feature.src` currently points to `/images/about_me.png`.
 - You should replace it with a dedicated goal image when ready.
 
 2. Scroll animation can hide content if observer fails.

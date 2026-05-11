@@ -7,22 +7,35 @@ import styles from "./SupportSection.module.css";
 const impactItems = [
   { icon: "🏗️", title: "Build Schools", desc: "Create safe learning spaces" },
   { icon: "📖", title: "Educate Children", desc: "Provide quality education" },
-  { icon: "🤝", title: "Uplift Communities", desc: "Build a stronger tomorrow" },
+  {
+    icon: "🤝",
+    title: "Uplift Communities",
+    desc: "Build a stronger tomorrow",
+  },
 ];
 
-const waysToCo = ["🤝 Collaborate", "💼 Sponsor", "📈 Invest", "📢 Spread the Word"];
+const waysToCo = ["Collaborate", "Sponsor", "Invest", "Spread the Word"];
 
 export function SupportSection() {
   return (
-    <section id="support" className="relative overflow-hidden bg-dark px-5 pt-24 pb-20">
-      <div className={`pointer-events-none absolute top-1/4 left-0 h-80 w-80 rounded-full ${styles.ambientLeft}`} />
-      <div className={`pointer-events-none absolute right-0 bottom-1/4 h-64 w-64 rounded-full ${styles.ambientRight}`} />
+    <section
+      id="support"
+      className="relative overflow-hidden bg-dark px-5 pt-24 pb-20"
+    >
+      <div
+        className={`pointer-events-none absolute top-1/4 left-0 h-80 w-80 rounded-full ${styles.ambientLeft}`}
+      />
+      <div
+        className={`pointer-events-none absolute right-0 bottom-1/4 h-64 w-64 rounded-full ${styles.ambientRight}`}
+      />
 
       <div className="relative z-10 mx-auto max-w-5xl">
         <div className="mb-16 grid items-center gap-16 md:grid-cols-2 lg:gap-24">
           <div className="reveal">
             <SectionLabel dark>Support My Mission</SectionLabel>
-            <h2 className={`mb-6 font-serif font-bold leading-[1.2] text-white ${styles.heading}`}>
+            <h2
+              className={`mb-6 font-serif font-bold leading-[1.2] text-white ${styles.heading}`}
+            >
               Your Support,
               <br />
               <span className={styles.headingAccent}>Their Tomorrow.</span>
@@ -40,20 +53,28 @@ export function SupportSection() {
             </div>
           </div>
 
-          <div className={`reveal reveal-delay-2 flex min-h-[280px] flex-col items-center justify-center gap-6 rounded-3xl p-8 ${styles.statsCard}`}>
+          <div
+            className={`reveal reveal-delay-2 flex min-h-[280px] flex-col items-center justify-center gap-6 rounded-3xl p-8 ${styles.statsCard}`}
+          >
             <span className="text-4xl opacity-25">🏫</span>
             <p className="text-center font-handwrite text-lg text-white/30">
               Every rupee builds a dream
             </p>
             <div className="flex gap-8">
               <div className="text-center">
-                <div className={`text-2xl font-bold ${styles.metric}`}>100%</div>
-                <div className="mt-0.5 text-[0.7rem] text-white/30">Transparency</div>
+                <div className={`text-2xl font-bold ${styles.metric}`}>
+                  100%
+                </div>
+                <div className="mt-0.5 text-[0.7rem] text-white/30">
+                  Transparency
+                </div>
               </div>
               <div className={`w-px self-stretch ${styles.metricDivider}`} />
               <div className="text-center">
                 <div className={`text-2xl font-bold ${styles.metric}`}>80G</div>
-                <div className="mt-0.5 text-[0.7rem] text-white/30">Tax Benefit</div>
+                <div className="mt-0.5 text-[0.7rem] text-white/30">
+                  Tax Benefit
+                </div>
               </div>
             </div>
           </div>
@@ -66,7 +87,9 @@ export function SupportSection() {
               className={`rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-green-primary/25 ${styles.impactCard}`}
             >
               <div className="mb-3 text-2xl">{item.icon}</div>
-              <div className="mb-1 text-sm font-semibold text-white">{item.title}</div>
+              <div className="mb-1 text-sm font-semibold text-white">
+                {item.title}
+              </div>
               <div className="text-xs text-white/35">{item.desc}</div>
             </div>
           ))}
@@ -76,7 +99,9 @@ export function SupportSection() {
           <DonationCard />
         </div>
 
-        <div className={`reveal mt-6 rounded-2xl p-6 text-center ${styles.supportCard}`}>
+        <div
+          className={`reveal mt-6 rounded-2xl p-6 text-center ${styles.supportCard}`}
+        >
           <p className="mb-2 font-handwrite text-lg text-white/35">
             Every sip of coffee = one step closer to the dream
           </p>
@@ -101,7 +126,10 @@ export function SupportSection() {
           <p className="section-label mb-4 text-white/25">Other Ways to Help</p>
           <div className="flex flex-wrap justify-center gap-3">
             {waysToCo.map((w) => (
-              <span key={w} className={`rounded-full px-5 py-2 text-sm text-white/45 ${styles.pill}`}>
+              <span
+                key={w}
+                className={`rounded-full px-5 py-2 text-sm text-white/45 ${styles.pill}`}
+              >
                 {w}
               </span>
             ))}
